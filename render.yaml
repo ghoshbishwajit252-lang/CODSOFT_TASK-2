@@ -1,7 +1,3 @@
-
-## 7. **render.yaml** (Optional - for Blueprint deployment)
-
-```yaml
 services:
   - type: web
     name: contact-book
