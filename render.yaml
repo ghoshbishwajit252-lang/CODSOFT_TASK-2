@@ -1,0 +1,14 @@
+
+## 7. **render.yaml** (Optional - for Blueprint deployment)
+
+```yaml
+services:
+  - type: web
+    name: contact-book
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+    plan: free
